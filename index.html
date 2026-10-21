@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JonBoyBeats</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #080b11; --surface: #12151c; --surface-2: #161a22;
+    --ink: #ffffff; --muted: #8b94a4; --line: #1c212c; --line-strong: #2a3140;
+    --nfl: #479580; --nba: #d6843b; --surv: #437fb5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .shell { max-width: 880px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: .2px; }
+  .sub { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: 10px;
+          background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--c); }
+  .card h2 { margin: 0; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 13.5px; flex: 1; }
+  .links { display: flex; gap: 8px; flex-wrap: wrap; }
+  .links a { padding: 7px 14px; border-radius: 7px; font-weight: 600; font-size: 13.5px; text-decoration: none;
+             color: var(--ink); background: var(--surface-2); border: 1px solid var(--line-strong); }
+  .links a.go { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .links a:hover { border-color: var(--ink); }
+  .links a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <h1>JonBoyBeats</h1>
+  <p class="sub">Boards and books.</p>
+  <div class="cards">
+    <section class="card" style="--c: var(--nfl)">
+      <h2>NFL</h2>
+      <p>Underdog Battle Royale board: live ADP, ETR and college projections, Workload score, sync and export.</p>
+      <div class="links">
+        <a class="go" href="/br_rankings/">Board</a>
+        <a href="/br_rankings/analysis.html">Analysis</a>
+      </div>
+    </section>
+    <section class="card" style="--c: var(--nba)">
+      <h2>NBA</h2>
+      <p>Daily Underdog board: morning Proj before ETR, ETR in the afternoon, Ceil and Flr tiebreaks, who's out, and the day's write-ups.</p>
+      <div class="links">
+        <a class="go" href="/br_rankings/nba.html">Board</a>
+      </div>
+    </section>
+    <section class="card" style="--c: var(--surv)">
+      <h2>Survivor</h2>
+      <p>The survivor book: this week's picks across every contest.</p>
+      <div class="links">
+        <a class="go" href="/survivor/">Book</a>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
