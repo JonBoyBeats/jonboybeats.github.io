@@ -10,7 +10,7 @@
     color-scheme: dark;
     --bg: #080b11; --surface: #12151c; --surface-2: #161a22;
     --ink: #ffffff; --muted: #8b94a4; --line: #1c212c; --line-strong: #2a3140;
-    --nfl: #479580; --nba: #d6843b; --surv: #437fb5;
+    --nfl: #479580; --nba: #d6843b; --surv: #437fb5; --health: #8f7ad6;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
@@ -56,6 +56,13 @@
       <p>The survivor book: this week's picks across every contest.</p>
       <div class="links">
         <a class="go" href="/survivor/">Book</a>
+      </div>
+    </section>
+    <section class="card" style="--c: var(--health)">
+      <h2>Health</h2>
+      <p>Macros and weight for the two of us: log meals by talking, scanning or searching, and see what's left for the day.</p>
+      <div class="links">
+        <a class="go" href="/health-tracking/">Open</a>
       </div>
     </section>
   </div>
